@@ -6,6 +6,7 @@
     </header>
 
   <div id="content">
+    <!-- simple_format will have code in block and paragraphs, but will use pygments markdown gem-->
     <%= markdown @post.content %>
   </div>
 
@@ -22,7 +23,6 @@
   </div>
   <hr>
 
-  <%= render 'disqus' %>
 
 </div>
 
