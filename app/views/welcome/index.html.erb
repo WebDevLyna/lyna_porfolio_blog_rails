@@ -1,0 +1,18 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+    <p>I’m a Front-end Developer living in Toronto, ON, Canada.</p>
+    <p>By day, I try to create new projects. By night, I attend Meetups and some training for continuous learning.</p>
+    <p>You can find my <a href="https://profiles.bitmaker.co/students/lyna-nguyen">Bitmaker Profile</a> along with my Resume, Portfolio, and Social Media.</p>
+  </div>
+	<div class="col-2 homepage_content">
+		<h2>Stuff I've Written</h2>
+		<hr>
+		<% @posts.each do |post| %>
+			<h3><a href="#"><%= link_to post.title, post %></a></h3>
+			<p class="date"><%= post.created_at.strftime("%A, %b %d %Y") %></p>
+		<% end %>
+  </div>
+
+	</div>
