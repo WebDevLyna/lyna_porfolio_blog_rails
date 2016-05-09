@@ -23,6 +23,23 @@ class ProjectsController < ApplicationController
     # under private find project params below and before_action
   end
 
+  def edit
+    # under private find project params below and before_action
+  end
+
+  def update
+    if @project.update project_params
+      redirect_to @project, notice: "Nice Lyna! That project was successfuly updated!"
+    else
+      render 'edit'
+    end
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to project_path
+  end
+
 
   private
 
