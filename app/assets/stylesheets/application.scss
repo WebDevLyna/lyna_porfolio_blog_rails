@@ -183,6 +183,19 @@ input[type="submit"], .button {
   border-bottom: 1px solid #E9E9E9;
 }
 
+#welcome_panel {
+  background:rgba(0, 0, 0, 0.2);
+  color:white;
+  border:none;
+  padding:20px;
+}
+
+#about_background {
+  background:asset-url('laptop4.jpg') no-repeat center fixed;
+  background-size:cover;
+}
+
+
 @import 'welcome';
 @import 'post_projects';
 @import 'pygments';
