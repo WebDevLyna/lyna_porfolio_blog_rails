@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
   before_action :find_project, only: [:show, :edit, :update, :destroy]
+  # this is a devise method to allow viewers on index and show, but must log in for otehrs
+  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @projects = Project.all.order("created_at DESC")
