@@ -45,7 +45,7 @@ class PostsController < ApplicationController
 
   # Change Post.find to Post.friendly.find in your controller
   def find_post
-    @post = Post.find(params[:id])
+    @post = Post.friendly.find(params[:id])
   end
 
 end
