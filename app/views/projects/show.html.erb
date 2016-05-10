@@ -1,16 +1,16 @@
 <div id="post_show_content" class="skinny_wrapper wrapper_padding">
-    <header>
-      <p class="date"><%= @project.created_at.strftime('%A, %B %d, %Y') %></p>
-      <h2><%= @project.title %></h2>
-      <hr>
-    </header>
+  <header>
+    <p class="date"><%= @project.created_at.strftime('%B %Y') %></p>
+    <h2><%= @project.title %></h2>
+    <hr>
+  </header>
 
   <div id="content">
     <!-- simple_format will have code in block and paragraphs, but will use pygments markdown gem-->
     <%= markdown @project.description %>
 
     <div class="button_wrapper">
-        <a href="<%= @project.link %>" class="project_button", target="_blank">Visit "<%= @project.title %>"</a>
+      <a href="<%= @project.link %>" class="project_button", target="_blank">Visit "<%= @project.title %>"</a>
     </div>
 
     <% if user_signed_in? %>
@@ -19,7 +19,6 @@
       <%= link_to "Delete", project_path(@project), method: :delete, data: { confirm: "Are you sure you want to delete this project?" } %>
     <% end %>
     </div>
-
     <hr>
-
   </div>
+</div>

@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-
   <title>Lyna Nguyen - Front-end Developer</title>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-  <header id="main_navigation" class="clearfix">
-    <%= link_to "Lyna Nguyen", root_path, class: "name" %>
-  <nav>
-    <%= link_to "Blog Posts", posts_path %>
-    <%= link_to "Projects", projects_path %>
-    <%= link_to "Contact", new_contact_path %>
-    <% if user_signed_in? %>
-      <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
-    <% end %>
-
-  </nav>
-  </header>
+<header id="main_navigation" class="clearfix">
+  <%= link_to "Lyna Nguyen", root_path, class: "name" %>
+<nav>
+  <%= link_to "Blog Posts", posts_path %>
+  <%= link_to "Projects", projects_path %>
+  <%= link_to "Contact", new_contact_path %>
+  <% if user_signed_in? %>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+  <% end %>
+</nav>
+</header>
 
   <% if notice %>
   <p class="notice"><%= notice %></p>
