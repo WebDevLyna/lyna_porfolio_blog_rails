@@ -1,5 +1,5 @@
 <div id="about_background" class="wrapper wrapper_padding clearfix">
-	<div id="welcome_panel" class="col-1 about homepage_content">
+	<div id="welcome_panel" class="col-lg-12 about homepage_content">
 		<h2>About</h2>
 		<hr>
       <p>I am a well-rounded Full-Stack Web Developer. My current passion is in Front-end.</p>
@@ -9,6 +9,8 @@
       <p>You can find my <a href="https://profiles.bitmaker.co/students/lyna-nguyen">Bitmaker Profile</a> along with my Resume, Portfolio, and Social Media.</p>
       <%= link_to image_tag("bitmaker.png"), "https://profiles.bitmaker.co/students/lyna-nguyen" %>
   </div>
+  <br>
+  <br>
 	<div class="col-2 homepage_content">
 		<h2>Stuff I've Written</h2>
 		<hr>
@@ -17,6 +19,8 @@
 			<p class="date"><%= post.created_at.strftime("%A, %b %d %Y") %></p>
 		<% end %>
   </div>
+  <br>
+  <br>
   <div class="col-2 homepage_content">
     <h2>Stuff I've Built</h2>
     <hr>
@@ -25,5 +29,4 @@
       <p class="date"><%= project.created_at.strftime("%A, %b %d %Y") %></p>
     <% end %>
   </div>
-
-	</div>
+</div>
