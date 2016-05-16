@@ -194,8 +194,8 @@ input[type="submit"], .button {
   border-radius: .30em;
 }
 
-a.btn.btn-link:hover {
-  background: #ffb3d9;
+.btn.btn-link {
+  background: $highlight;
 }
 
 
