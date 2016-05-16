@@ -40,11 +40,9 @@
   }
 }
 
-.about {
-  padding: 0 7.5% 0 0;
+.about, .col-2 {
+  padding: 20px;
   a {
-    color: $light;
-    font: bold;
     text-decoration: none;
   }
 }
