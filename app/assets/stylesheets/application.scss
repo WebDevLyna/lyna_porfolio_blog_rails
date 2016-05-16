@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 .wrapper {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -211,23 +211,18 @@ input[type="submit"], .button {
   border-bottom: 1px solid #E9E9E9;
 }
 
-#welcome_panel {
-  background:rgba(0, 0, 0, 0.1);
-  color:white;
-  border:none;
-  padding:20px;
-}
-
 #about_background {
   background:asset-url('laptop.jpg') no-repeat center fixed;
   background-size:cover;
 }
 
 
-// #blog_background {
-//   background:asset-url('post2.jpg') no-repeat center fixed;
-//   background-size:cover;
-// }
+#welcome_panel {
+  background:rgba(0, 0, 0, 0.2);
+  color:white;
+  border:none;
+  padding:20px;
+}
 
 img {
   max-width: 100%;
