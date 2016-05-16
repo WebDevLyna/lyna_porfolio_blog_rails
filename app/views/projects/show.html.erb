@@ -9,9 +9,9 @@
     <!-- simple_format will have code in block and paragraphs, but will use pygments markdown gem-->
     <%= markdown @project.description %>
 
-    <div class="button_wrapper">
-      <a href="<%= @project.link %>" class="project_button", target="_blank">Visit "<%= @project.title %>"</a>
-    </div>
+  <div class="button_wrapper">
+    <a class="btn btn-link" href="<%= @project.link %>", target="_blank">Visit "<%= @project.title %>"</a>
+  </div>
 
     <% if user_signed_in? %>
     <div id="admin_links">
